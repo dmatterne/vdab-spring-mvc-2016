@@ -1,0 +1,11 @@
+INSERT INTO FILM(title,description,release_Year,length) VALUES ("Lord of the Foo","This is its description",1985,70);
+INSERT INTO FILM(title,description,release_Year,length) VALUES ("Foo Towers","This is its description",1986,70);
+INSERT INTO FILM(title,description,release_Year,length) VALUES ("The Return of the foo","This is its description",1984,70);
+INSERT INTO FILM(title,description,release_Year,length) VALUES ("Foo: Beginnings","This is its description",2010,100);
+INSERT INTO FILM(title,description,release_Year,length) VALUES ("Foo: The last stand","This is its description",2000,70);
+INSERT INTO FILM(title,description,release_Year,length) VALUES ("Foo: Apocalypse","This is its description",2001,90);
+INSERT INTO FILM(title,description,release_Year,length) VALUES ("Foo of the twilight","This is its description",2015,80);
+INSERT INTO FILM(title,description,release_Year,length) VALUES ("Foo of the new moon","This is its description",2014,70);
+INSERT INTO FILM(title,description,release_Year,length) VALUES ("Dawn of the planet  foo","This is its description",1985,70);
+INSERT INTO FILM(title,description,release_Year,length) VALUES ("The little Foo","This is its description",1999,70);
+INSERT INTO FILM(title,description,release_Year,length) VALUES ("101 Foo's","This is its description",1998,70);
