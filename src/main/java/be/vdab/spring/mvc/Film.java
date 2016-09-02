@@ -4,6 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Film {
@@ -11,9 +14,14 @@ public class Film {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Size(min=2)
     private String title;
     private String description;
-    private String releaseYear;
+
+    @Max(2017)
+    private int releaseYear;
+
+    @Max(200)
     private int length;
 
     public Film() {
@@ -39,23 +47,12 @@ public class Film {
         this.description = description;
     }
 
-    public String getReleaseYear() {
+    public int getReleaseYear() {
         return releaseYear;
     }
 
-    public void setReleaseYear(String releaseYear) {
+    public void setReleaseYear(int releaseYear) {
         this.releaseYear = releaseYear;
-    }
-
-    @Override
-    public String toString() {
-        return "Film{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", description='" + description + '\'' +
-                ", releaseYear='" + releaseYear + '\'' +
-                ", length=" + length +
-                '}';
     }
 
     public int getLength() {

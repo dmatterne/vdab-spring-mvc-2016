@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<h1>Add a new film</h1>
+<p>On this page we add a new film</p>
+
+<form method="post" th:action="@{/processfilm}" th:object="${film}">
+    <div class="errors" th:if="${#fields.hasErrors('*')}">
+        <ul>
+            <li th:each="err : ${#fields.errors('*')}" th:text="${err}">Input is incorrect</li>
+        </ul>
+    </div>
+    <div>
+        <label th:class="${#fields.hasErrors('title')}? 'error'" for="title">Title</label>
+        <input th:field="*{title}" th:class="${#fields.hasErrors('title')}?
+'error'" name="title" type="text"/>
+    </div>
+    <div>
+        <label th:class="${#fields.hasErrors('description')} ? 'error'" for="description">Description</label>
+        <input th:field="*{description}" th:class="${#fields.hasErrors('description')}?
+'error'" name="description" type="text"/>
+    </div>
+    <div>
+        <label th:class="${#fields.hasErrors('releaseYear')}? 'error'" for="releaseYear">Release year</label>
+        <input th:field="*{releaseYear}" th:class="${#fields.hasErrors('releaseYear')}?
+'error'" name="releaseYear" type="text"/>
+    </div>
+    <div>
+        <label th:class="${#fields.hasErrors('length')}? 'error'" for="length">Length</label>
+        <input th:field="*{length}" th:class="${#fields.hasErrors('length')}?
+'error'" name="length" type="text"/>
+    </div>
+    <input type="submit" value="Add new film"/>
+</form>
+
+</body>
+</html>

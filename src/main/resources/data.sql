@@ -1,11 +1,5 @@
-INSERT INTO FILM(title,description,release_Year,length) VALUES ("Lord of the Foo","This is its description",1985,70);
-INSERT INTO FILM(title,description,release_Year,length) VALUES ("Foo Towers","This is its description",1986,70);
-INSERT INTO FILM(title,description,release_Year,length) VALUES ("The Return of the foo","This is its description",1984,70);
-INSERT INTO FILM(title,description,release_Year,length) VALUES ("Foo: Beginnings","This is its description",2010,100);
-INSERT INTO FILM(title,description,release_Year,length) VALUES ("Foo: The last stand","This is its description",2000,70);
-INSERT INTO FILM(title,description,release_Year,length) VALUES ("Foo: Apocalypse","This is its description",2001,90);
-INSERT INTO FILM(title,description,release_Year,length) VALUES ("Foo of the twilight","This is its description",2015,80);
-INSERT INTO FILM(title,description,release_Year,length) VALUES ("Foo of the new moon","This is its description",2014,70);
-INSERT INTO FILM(title,description,release_Year,length) VALUES ("Dawn of the planet  foo","This is its description",1985,70);
-INSERT INTO FILM(title,description,release_Year,length) VALUES ("The little Foo","This is its description",1999,70);
-INSERT INTO FILM(title,description,release_Year,length) VALUES ("101 Foo's","This is its description",1998,70);
+insert into film(title, description, release_year, length) values('Legends Of The Fall', 'A melodrama with Brad Pitt and Anthony hopkins', 1995, 133);
+insert into film(title, description, release_year, length) values('The Matrix', 'Film with digital green on black', 2000, 165);
+insert into film(title, description, release_year, length) values('Lawrence Of Arabia', 'Desert dwellers attack ottoman empire', 1987, 142);
+insert into film(title, description, release_year, length) values('Reservoir Dogs', 'Criminals perform a bank robbery', 2003, 95);
+insert into film(title, description, release_year, length) values('Once Upon A Time In The West', 'Spaghetti western', 1998, 120);
