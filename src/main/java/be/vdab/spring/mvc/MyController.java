@@ -3,6 +3,7 @@ package be.vdab.spring.mvc;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -29,8 +30,8 @@ public class MyController {
     }
 
     @RequestMapping("/ex")
-    @ResponseBody
-    public String ex() {
-        return fr.findAll().toString();
+    public String ex(Model model) {
+        model.addAttribute("filmList", fr.findAll());
+        return "films";
     }
 }

@@ -47,4 +47,12 @@ public class Film {
     public void setReleaseYear(String releaseYear) {
         this.releaseYear = releaseYear;
     }
+
+    public int getLength() {
+        return length;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
 }
